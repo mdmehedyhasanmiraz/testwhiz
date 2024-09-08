@@ -1,38 +1,55 @@
-import { Container, Image, NavDropdown, Navbar, Nav } from 'react-bootstrap'
 import { SignedOut, SignInButton, SignedIn, UserButton } from '@clerk/clerk-react'
-import './header.css'
+import { Link } from 'react-router-dom'
+import {
+  Navbar,
+  NavbarBrand,
+  NavbarCollapse,
+  NavbarCollapseBtn,
+  NavbarContainer,
+  NavbarItem,
+  NavbarList,
+} from 'keep-react'
 
 const Header = () => {
   return (
-    <div>
-      <Navbar expand="lg" className="bg-body-tertiary">
-        <Container className="container-lg grid gap-5">
-          <Navbar.Brand href="#home">
-            <Image src="#" width={50} className=""/>
-          </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
-              <Nav.Link href="https://test.oimi.co/">Home</Nav.Link>
-              <Nav.Link href="https://test.oimi.co/">All Products</Nav.Link>
-              <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Coming Soon!</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">Coming Soon!</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-              </NavDropdown>
-            </Nav>
+    <Navbar className='z-50 fixed top-0 left-0 right-0 bg-background/60 backdrop-blur-xl transition-all bg-transparent'>
+      <NavbarContainer>
+        <NavbarBrand>
+          <img src="/src/assets/testwhiz.png" alt="testwhiz" width="120" height="45" />
+        </NavbarBrand>
+        <NavbarList>
+          <NavbarItem><Link to="/#features">Features</Link></NavbarItem>
+          <NavbarItem><Link to="/#reviews">Reviews</Link></NavbarItem>
+          <NavbarItem><Link to='/about'>About</Link></NavbarItem>
+          <NavbarItem><Link to="/#faq">FAQ</Link></NavbarItem>
+        </NavbarList>
+        <NavbarList>
+          <NavbarItem active={true}>
+            <SignedOut>
+              <SignInButton></SignInButton>
+            </SignedOut>
+          </NavbarItem>
+          <SignedIn>
+            <UserButton></UserButton>
+          </SignedIn>
+        </NavbarList>
+        <NavbarCollapseBtn />
+        <NavbarCollapse>
+          <NavbarItem><Link to="/#features">Features</Link></NavbarItem>
+          <NavbarItem><Link to="/#reviews">Reviews</Link></NavbarItem>
+          <NavbarItem><Link to='/about'>About</Link></NavbarItem>
+          <NavbarItem><Link to="/#faq">FAQ</Link></NavbarItem>
+          <NavbarItem active={true}>
             <SignedOut>
               <SignInButton />
             </SignedOut>
-            <SignedIn>
-              <UserButton />
-            </SignedIn>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
-    </div>
+          </NavbarItem>
+          <SignedIn>
+            <UserButton />
+          </SignedIn>
+        </NavbarCollapse>
+      </NavbarContainer>
+    </Navbar>
   )
 }
 
