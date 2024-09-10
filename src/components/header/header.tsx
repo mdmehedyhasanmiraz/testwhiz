@@ -15,7 +15,7 @@ const Header = () => {
     <Navbar className='z-50 fixed top-0 left-0 right-0 bg-background/60 backdrop-blur-xl transition-all bg-transparent'>
       <NavbarContainer>
         <NavbarBrand>
-          <img src="/src/assets/testwhiz.png" alt="testwhiz" width="120" height="45" />
+          <img src="/src/assets/testwhiz.svg" alt="testwhiz" max-width="120" height="45" />
         </NavbarBrand>
         <NavbarList>
           <NavbarItem><Link to="/#features">Features</Link></NavbarItem>
@@ -24,11 +24,11 @@ const Header = () => {
           <NavbarItem><Link to="/#faq">FAQ</Link></NavbarItem>
         </NavbarList>
         <NavbarList>
-          <NavbarItem active={true}>
-            <SignedOut>
+          <SignedOut>
+            <NavbarItem active={true}>
               <SignInButton></SignInButton>
-            </SignedOut>
-          </NavbarItem>
+            </NavbarItem>
+          </SignedOut>
           <SignedIn>
             <UserButton></UserButton>
           </SignedIn>
@@ -39,11 +39,11 @@ const Header = () => {
           <NavbarItem><Link to="/#reviews">Reviews</Link></NavbarItem>
           <NavbarItem><Link to='/about'>About</Link></NavbarItem>
           <NavbarItem><Link to="/#faq">FAQ</Link></NavbarItem>
-          <NavbarItem active={true}>
-            <SignedOut>
+          <SignedOut>
+            <NavbarItem active={true}>
               <SignInButton />
-            </SignedOut>
-          </NavbarItem>
+            </NavbarItem>
+          </SignedOut>
           <SignedIn>
             <UserButton />
           </SignedIn>

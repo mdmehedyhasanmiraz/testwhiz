@@ -1,5 +1,5 @@
-import { useRouteError } from "react-router-dom";
-import Header from "../header/header";
+import { useRouteError } from "react-router-dom"
+import Header from "../header/Header"
 
 export default function ErrorPage() {
   const error = useRouteError();

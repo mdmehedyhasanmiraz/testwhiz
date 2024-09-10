@@ -1,11 +1,17 @@
-import Header from '../header/header'
+import Header from '../header/Header'
 import { Outlet } from 'react-router-dom'
-import Footer from '../footer/footer'
+import Footer from '../footer/Footer'
 import '../../index.css'
 
 const Root = () => {
   return (
-    <><Header></Header><Outlet></Outlet><Footer></Footer></>
+    <>
+    <Header />
+    <div className="mt-24">
+      <Outlet />
+    </div>
+    <Footer />
+    </>
   );
 };
 

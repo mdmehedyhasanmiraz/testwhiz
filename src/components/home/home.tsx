@@ -7,6 +7,7 @@ import {
   AccordionPanel,
   AccordionTitle,
 } from 'keep-react'
+import Marquee from "react-fast-marquee"
 
 const features = [
   {
@@ -97,46 +98,55 @@ const Home = () => {
 
     <section>
       <div className="bg-white py-24 sm:py-32">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="mx-auto">
           <h2 className="text-center text-3xl font-semibold leading-8 text-gray-900">
-            Supported with the most popular LMS!
+            Supported with the most popular LMS platforms!
           </h2>
-          <div className="mx-auto mt-16 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
+          <div className="mx-auto mt-16 grid grid-cols-1 items-center gap-x-8 gap-y-10 sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:grid-cols-1">
+          <Marquee pauseOnClick={true} gradient={true}>
             <img
-              alt="Transistor"
-              src="https://tailwindui.com/img/logos/158x48/transistor-logo-gray-900.svg"
-              width={158}
+              alt="blackboard"
+              src="/src/assets/blackboard.svg"
               height={48}
-              className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+              className="col-span-2 max-h-10 mx-12 max-w-40"
             />
             <img
-              alt="Reform"
-              src="https://tailwindui.com/img/logos/158x48/reform-logo-gray-900.svg"
-              width={158}
+              alt="canvas"
+              src="/src/assets/canvas.svg"
               height={48}
-              className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+              className="col-span-2 max-h-10 mx-12 max-w-40"
             />
             <img
-              alt="Tuple"
-              src="https://tailwindui.com/img/logos/158x48/tuple-logo-gray-900.svg"
-              width={158}
+              alt="d2l"
+              src="/src/assets/d2l.svg"
               height={48}
-              className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+              className="col-span-2 max-h-10 mx-12 max-w-40"
             />
             <img
-              alt="SavvyCal"
-              src="https://tailwindui.com/img/logos/158x48/savvycal-logo-gray-900.svg"
-              width={158}
+              alt="moodle"
+              src="/src/assets/moodle.svg"
               height={48}
-              className="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
+              className="col-span-2 max-h-10 mx-12 max-w-40"
             />
             <img
-              alt="Statamic"
-              src="https://tailwindui.com/img/logos/158x48/statamic-logo-gray-900.svg"
-              width={158}
+              alt="respondus"
+              src="/src/assets/respondus.svg"
               height={48}
-              className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
+              className="col-span-2 max-h-10 mx-12 max-w-40"
             />
+            <img
+              alt="schoology"
+              src="/src/assets/schoology.svg"
+              height={48}
+              className="col-span-2 max-h-10 mx-12 max-w-40"
+            />
+            <img
+              alt="tophat"
+              src="/src/assets/tophat.svg"
+              height={48}
+              className="col-span-2 max-h-10 mx-12 max-w-40"
+            />
+          </Marquee>
           </div>
         </div>
       </div>
