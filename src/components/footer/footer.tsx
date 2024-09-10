@@ -6,8 +6,8 @@ const Footer = () => {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-3 md:gap-8 py-10 max-sm:max-w-sm max-sm:mx-auto gap-y-8">
                 <div className="col-span-full mb-10 lg:col-span-2 lg:mb-0">
-                    <a href="https://pagedone.io/"  className="flex justify-center lg:justify-start">
-                    <img src="/src/assets/testwhiz.png" />
+                    <a href="https://testwhiz.co/"  className="flex justify-center lg:justify-start">
+                    <img src="/src/assets/testwhiz.svg" alt="testwhiz" width="120px" height="45px" />
                     </a>
                     <p className="py-8 text-sm text-gray-500 lg:max-w-xs text-center lg:text-left">Trusted in more than 100 countries & 5 million customers. Have any query ?</p>
                     <a href="javascript:;"  className="py-2.5 px-5 h-9 block w-fit bg-indigo-600 rounded-full shadow-sm text-xs text-white mx-auto transition-all  duration-500 hover:bg-indigo-700 lg:mx-0">
@@ -53,7 +53,7 @@ const Footer = () => {
             </div>
             <div className="py-7 border-t border-gray-200">
                 <div className="flex items-center justify-center flex-col lg:justify-between lg:flex-row">
-                    <span className="text-sm text-gray-500 ">©<a href="https://pagedone.io/">pagedone</a> 2024, All rights reserved.</span>
+                    <span className="text-sm text-gray-500 ">©<a href="https://testwhiz.co/">TestWhiz</a> 2024, All rights reserved.</span>
                     <div className="flex mt-4 space-x-4 sm:justify-center lg:mt-0 ">
                         <a href="javascript:;"  className="w-9 h-9 rounded-full bg-gray-700 flex justify-center items-center hover:bg-indigo-600">
                           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">

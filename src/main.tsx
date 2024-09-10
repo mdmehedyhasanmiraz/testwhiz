@@ -2,9 +2,9 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { ClerkProvider } from '@clerk/clerk-react'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
-import ErrorPage from './components/errorPage/ErrorPage'
-import Root from './components/root/Root'
-import Home from './components/home/Home'
+import ErrorPage from './components/errorPage/errorPage'
+import Root from './components/root/root'
+import Home from './components/home/home'
 import './index.css'
 
 // Import your publishable key
