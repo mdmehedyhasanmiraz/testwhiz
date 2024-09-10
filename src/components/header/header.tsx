@@ -15,7 +15,7 @@ const Header = () => {
     <Navbar className='z-50 fixed top-0 left-0 right-0 bg-background/60 backdrop-blur-xl transition-all bg-transparent'>
       <NavbarContainer>
         <NavbarBrand>
-          <img src="/src/assets/testwhiz.svg" alt="testwhiz" max-width="120" height="45" />
+          <img src="/src/assets/testwhiz.svg" alt="testwhiz" width="120px" height="45px" />
         </NavbarBrand>
         <NavbarList>
           <NavbarItem><Link to="/#features">Features</Link></NavbarItem>
