@@ -106,43 +106,43 @@ const Home = () => {
           <Marquee pauseOnClick={true} gradient={true}>
             <img
               alt="blackboard"
-              src="/src/assets/blackboard.svg"
+              src="/blackboard.svg"
               height={48}
               className="col-span-2 max-h-10 mx-12 max-w-40"
             />
             <img
               alt="canvas"
-              src="/src/assets/canvas.svg"
+              src="/canvas.svg"
               height={48}
               className="col-span-2 max-h-10 mx-12 max-w-40"
             />
             <img
               alt="d2l"
-              src="/src/assets/d2l.svg"
+              src="/d2l.svg"
               height={48}
               className="col-span-2 max-h-10 mx-12 max-w-40"
             />
             <img
               alt="moodle"
-              src="/src/assets/moodle.svg"
+              src="/moodle.svg"
               height={48}
               className="col-span-2 max-h-10 mx-12 max-w-40"
             />
             <img
               alt="respondus"
-              src="/src/assets/respondus.svg"
+              src="/respondus.svg"
               height={48}
               className="col-span-2 max-h-10 mx-12 max-w-40"
             />
             <img
               alt="schoology"
-              src="/src/assets/schoology.svg"
+              src="/schoology.svg"
               height={48}
               className="col-span-2 max-h-10 mx-12 max-w-40"
             />
             <img
               alt="tophat"
-              src="/src/assets/tophat.svg"
+              src="/tophat.svg"
               height={48}
               className="col-span-2 max-h-10 mx-12 max-w-40"
             />
